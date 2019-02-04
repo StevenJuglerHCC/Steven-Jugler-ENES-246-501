@@ -10,7 +10,7 @@
 
 
 module switchLED(
-    input SW,
+    input  SW,
     output [15:0] LED
     );
     assign LED[0] = SW;
