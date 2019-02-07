@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/-3AndNand/project_3 creative/project_3 creative.srcs/sources_1/new/CreativeLab3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CreativeLab3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/-3AndNand/project_3 creative/project_3 creative.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

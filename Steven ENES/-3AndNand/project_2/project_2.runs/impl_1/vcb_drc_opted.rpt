@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Fri Jan 18 16:40:02 2019
-| Host         : LabSet332 running 64-bit major release  (build 9200)
+| Date         : Wed Feb  6 15:00:11 2019
+| Host         : DESKTOP-IPK4CS4 running 64-bit major release  (build 9200)
 | Command      : report_drc -file vcb_drc_opted.rpt -pb vcb_drc_opted.pb -rpx vcb_drc_opted.rpx
 | Design       : vcb
 | Device       : xc7a100tcsg324-1

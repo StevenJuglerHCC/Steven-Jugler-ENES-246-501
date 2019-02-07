@@ -60,16 +60,13 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_param synth.incrementalSynthesisCache {C:/Users/Scott Foerster/Documents/GitHub/ENES246/-3AndNand/project_1/.Xil/Vivado-6376-LabSet332/incrSyn}
   open_checkpoint vcb_routed.dcp
-  set_property webtalk.parent_dir {C:/Users/Scott Foerster/Documents/GitHub/ENES246/-3AndNand/project_1/project_1.cache/wt} [current_project]
+  set_property webtalk.parent_dir {C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/-3AndNand/project_1/project_1.cache/wt} [current_project]
   catch { write_mem_info -force vcb.mmi }
   write_bitstream -force vcb.bit 
   catch {write_debug_probes -quiet -force vcb}

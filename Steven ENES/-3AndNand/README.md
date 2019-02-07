@@ -13,21 +13,37 @@ Project_1 is playing with voltage controlled buffers just like the previous lab,
 
 #### Port Diagram
 
+
+
 #### Verilog Code
 
 ![1547913933708](1547913933708.png)
 
 #### RTL Schematic Screen shot
 
+![Lab3P1RTL](Lab3P1RTL.PNG)
+
 #### Synthesis Schematic Screen shot
+
+![Lab3P1Synth](Lab3P1Synth.PNG)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![Lab3P1Interest](Lab3P1Interest.PNG)
+
 #### Testing
+
+
 
 *A logical 1 is visible in the verilog code (vcb.v) and yet the RTL analysis schematic gets rid of the logical constant and is identical to the previous lab. Why? Draw a diagram similar to the RTL analysis with containing the design intent of the verilog code.*
 
+
+
 *What happens if the order of 1 and sw0  are switched (and the order of 1 and sw1) in the verilog code?*
+
+I**t fails in the implementation stage, ERROR: [DRC MDRV-1] Multiple Driver Nets: Net LED_OBUF has multiple drivers: sw0_IBUF_inst/O, and sw1_IBUF_inst/O.**
+
+
 
 Comment out the lines:
 
@@ -38,41 +54,83 @@ in the xdc file.
 
 *What error messages are generated?*   
 
+**None.**
+
+
+
 *Which (RTL, Synthesis, Implement or Generate Bitstream) causes failure?* 
+
+**none, it worked.**
+
+
 
 *Which starts complaining first about these two lines?*
 
+**none,**
+
+
+
 *What technology is in the Xilinx FPGA we are using TTL, CMOS, etc. ? Provide a link to the web site where you looked up the answer.*
+
+
 
 *What is w in the verilog code? Is it necessary?* 
 
-## project_2 andGates
+**it is a variable,. it is not necessary, but it is helpful.**
+
+
+
+## project_2 and Gates
 
 In this project an "And" gate is created four different ways. Test it. Show your instructor all four ways working. 
 
 #### Port Diagram
 
+![Lab2P2Port](Lab2P2Port.PNG)
+
 #### Verilog Code
+
+![Lab3P2Code](Lab3P2Code.PNG)
 
 #### RTL Schematic Screen shot
 
+![Lab3P2RTL](Lab3P2RTL.PNG)
+
 #### Synthesis Schematic Screen shot
+
+![Lab3P2Synth](Lab3P2Synth-1549483338952.PNG)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![Lab3P2Interest](Lab3P2Interest.PNG)
+
 #### Testing
+
+
 
 *Which of the four ways is the most attractive way to code?*
 
+
+
 *At what level of verilog code abstraction is the **assign** command?*
+
+
 
 *Does order of the verilog commands (sequence of commands) change anything?*
 
+
+
 *What are a1,b1,n1,n2 associated with the gate names called in Verilog?*
 
-*In the language C, the names between () look like variables passing data to some kind of function, object or subroutine. What do the represent in verilog?* 
+
+
+*In the language C, the names between () look like variables passing data to some kind **of function, object or subroutine. What do the represent in verilog?* 
+
+
 
 *At what step (RTL, Synthesis, Implementation, BitFile) did Vivado figure out that most of the LED's were doing the same thing?* 
+
+
 
 *Implement each and gate one at a time. List any differences between them at the RTL or Synthesis states here. Take screen shots if you want or describe them verbally.* 
 
@@ -86,13 +144,23 @@ Use the "[assign](https://www.utdallas.edu/~akshay.sridharan/index_files/Page521
 
 #### Port Diagram
 
+
+
 #### Verilog Code
+
+
 
 #### RTL Schematic Screen shot
 
+
+
 #### Synthesis Schematic Screen shot
 
+
+
 #### Implementation Device screen shot zoomed in on something interesting
+
+
 
 #### Testing
 
