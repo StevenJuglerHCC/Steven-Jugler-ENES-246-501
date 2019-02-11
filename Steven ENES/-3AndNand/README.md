@@ -39,9 +39,13 @@ Project_1 is playing with voltage controlled buffers just like the previous lab,
 
 
 
+
+
 *What happens if the order of 1 and sw0  are switched (and the order of 1 and sw1) in the verilog code?*
 
 I**t fails in the implementation stage, ERROR: [DRC MDRV-1] Multiple Driver Nets: Net LED_OBUF has multiple drivers: sw0_IBUF_inst/O, and sw1_IBUF_inst/O.**
+
+
 
 
 
@@ -148,23 +152,41 @@ Use the "[assign](https://www.utdallas.edu/~akshay.sridharan/index_files/Page521
 
 #### Verilog Code
 
-
+![Lab3P3Code](Lab3P3Code.PNG)
 
 #### RTL Schematic Screen shot
 
-
+![Lab3P3RTL](Lab3P3RTL.PNG)
 
 #### Synthesis Schematic Screen shot
 
-
+![Lab3P3Synth](Lab3P3Synth.PNG)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
-
+![Lab3P3Interest](Lab3P3Interest.PNG)
 
 #### Testing
 
+​		A				B			C				W				X
+
+| 0    | 0    | 0    | 0    | 1    |
+| ---- | ---- | ---- | ---- | ---- |
+| 0    | 0    | 1    | 1    | 1    |
+| 0    | 1    | 0    | 1    | 1    |
+| 0    | 1    | 1    | 0    | 0    |
+| 1    | 0    | 0    | 1    | 0    |
+| 1    | 0    | 1    | 0    | 0    |
+| 1    | 1    | 0    | 0    | 0    |
+| 1    | 1    | 1    | 1    | 1    |
+
+
+
 *XOR gates have evolved with [two different implementations](https://en.wikipedia.org/wiki/XOR_gate#More_than_two_inputs) with three or more inputs.  Which does the verilog assign command implement?*
+
+
+
+
 
 ## Ethics
 
@@ -173,6 +195,14 @@ The ethics questions below are more important than your answers. The goal in ans
 #### Ethics of EDIF
 
 EDIF (Electric Design Interchange Format)  captures a battle between engineers trying to use tools like Vivado and engineers designing Vivado. They both have to make money. *Summarize this wikipedia article  on the death of [EDIF](https://en.wikipedia.org/wiki/EDIF) standards in less than 200 words:*
+
+
+
+
+
+
+
+
 
 This course is asking you to document circuits first with the port diagram and then screen shots of Vivado and finally a discussion of testing. You are in the role of an engineering using Vivado on a project. *Which verilog version of the project_1 circuit (simple or complex) should be entered into Vivado?  When is a more complex circuit a good thing and a simplified, reduced circuit a bad thing?*
 

@@ -26,13 +26,17 @@ output [0:1] LED
 
     );
    wire nand1;
+   wire nand2;
    wire xor1;
+   wire xor2;
    tri w;
    tri x;
-   xor x1(w,SW[0],SW[1]);
-   xor x2(w,x1,SW[2])
-   nand n3(x,nand1, SW[0], SW[1]);
-   nand n1(w,nand1,SW[0],SW[1],SW[2]);
+   
+   xor x1(xor1,SW[0],SW[1]);
+   xor x2(w,xor1, SW[2]);
+   nand n3(nand1, SW[0], SW[1]);
+   nand n1(x,nand1,SW[2]);
+   
    assign LED[0]=w;
    assign LED[1]=x; 
     
