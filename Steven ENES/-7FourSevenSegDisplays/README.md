@@ -6,7 +6,7 @@ There are three groups of Engineers with different objectives:
 
 1. Engineers work for vendors .. For example Engineers work to improve Xilinx hardware FPGAs and Xilinx Vivado software to use them.
 2. Engineers work for commercial/defense companies. Some use Xilinx. Others use Xilinx's competition. 
-3. Engineers work for educational institutions. They teach and create open source, public, free tools for their doctorate degrees. Their students build circuits with a variety of tools. 
+3. Engineers work for educational institutions. They teach and create open source, public, free tools for their doctorate degrees. Their students build circuits with a variety of tools and don't try to be an expert at one of them. 
 
 *Describe one area where these three different institutions conflict.* 
 
