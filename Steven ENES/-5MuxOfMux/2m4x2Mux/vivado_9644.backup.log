@@ -1,0 +1,123 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Feb 15 11:52:20 2019
+# Process ID: 9644
+# Current directory: C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/-5MuxOfMux/2m4x2Mux
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8884 C:\Users\Firev\OneDrive\Documents\GitHub\Steven-Jugler-ENES-246-501\Steven ENES\-5MuxOfMux\2m4x2Mux\m4x2Mux.xpr
+# Log file: C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/-5MuxOfMux/2m4x2Mux/vivado.log
+# Journal file: C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/-5MuxOfMux/2m4x2Mux\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/-5MuxOfMux/2m4x2Mux/m4x2Mux.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/-5MuxOfMux/2m4x2Mux'
+INFO: [Project 1-313] Project file moved from 'C:/Users/Scott Foerster/Documents/GitHub/ENES246/-5MuxOfMux/m4x2Mux' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/-5MuxOfMux/2m4x2Mux/m4x2Mux.ip_user_files', nor could it be found using path 'C:/Users/Scott Foerster/Documents/GitHub/ENES246/-5MuxOfMux/m4x2Mux/m4x2Mux.ip_user_files'.
+CRITICAL WARNING: [Board 49-67] The board_part definition was not found for digilentinc.com:nexys4_ddr:part0:1.1. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 686.723 ; gain = 87.086
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: m4x2Mux
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 850.980 ; gain = 64.012
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'm4x2Mux' [C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/-5MuxOfMux/2m4x2Mux/m4x2Mux.srcs/sources_1/new/m4x2Mux.v:3]
+INFO: [Synth 8-6157] synthesizing module 'm2x1Mux' [C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/-5MuxOfMux/2m4x2Mux/m4x2Mux.srcs/sources_1/imports/new/m2x1mux.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'm2x1Mux' (1#1) [C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/-5MuxOfMux/2m4x2Mux/m4x2Mux.srcs/sources_1/imports/new/m2x1mux.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'm4x2Mux' (2#1) [C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/-5MuxOfMux/2m4x2Mux/m4x2Mux.srcs/sources_1/new/m4x2Mux.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 894.781 ; gain = 107.813
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 894.781 ; gain = 107.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 894.781 ; gain = 107.813
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/-5MuxOfMux/2m4x2Mux/m4x2Mux.srcs/constrs_1/imports/m4x2Mux/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/-5MuxOfMux/2m4x2Mux/m4x2Mux.srcs/constrs_1/imports/m4x2Mux/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1203.711 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 1268.625 ; gain = 481.656
+8 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 1268.625 ; gain = 481.656
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Fri Feb 15 11:55:09 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/-5MuxOfMux/2m4x2Mux/m4x2Mux.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/-5MuxOfMux/2m4x2Mux/m4x2Mux.srcs/constrs_1/imports/m4x2Mux/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/-5MuxOfMux/2m4x2Mux/m4x2Mux.srcs/constrs_1/imports/m4x2Mux/Nexys4DDR_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1269.578 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+launch_runs impl_1 -jobs 2
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1713.066 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1714.566 ; gain = 1.500
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1719.582 ; gain = 0.000
+[Fri Feb 15 11:57:13 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/-5MuxOfMux/2m4x2Mux/m4x2Mux.runs/impl_1/runme.log
+close_design
+open_run impl_1
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1787.945 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1787.945 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1787.945 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Feb 15 12:02:59 2019...

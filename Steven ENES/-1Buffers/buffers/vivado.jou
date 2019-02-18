@@ -2,13 +2,14 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Mon Feb  4 14:48:26 2019
-# Process ID: 13376
-# Current directory: C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/-1Buffers/buffers
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15888 C:\Users\Firev\OneDrive\Documents\GitHub\Steven-Jugler-ENES-246-501\Steven ENES\-1Buffers\buffers\buffers.xpr
-# Log file: C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/-1Buffers/buffers/vivado.log
-# Journal file: C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/-1Buffers/buffers\vivado.jou
+# Start of session at: Wed Feb  6 15:16:49 2019
+# Process ID: 3404
+# Current directory: C:/Users/SET253-INS1U/Documents/GitHub/ENES246/-1Buffers/buffers
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3396 C:\Users\SET253-INS1U\Documents\GitHub\ENES246\-1Buffers\buffers\buffers.xpr
+# Log file: C:/Users/SET253-INS1U/Documents/GitHub/ENES246/-1Buffers/buffers/vivado.log
+# Journal file: C:/Users/SET253-INS1U/Documents/GitHub/ENES246/-1Buffers/buffers\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project {C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/-1Buffers/buffers/buffers.xpr}
+open_project C:/Users/SET253-INS1U/Documents/GitHub/ENES246/-1Buffers/buffers/buffers.xpr
 update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
