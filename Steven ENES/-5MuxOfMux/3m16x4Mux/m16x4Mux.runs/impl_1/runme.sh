@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/FoersterGame/Documents/GitHub/ENES246/-5MuxOfMux/m16x4Mux/m16x4Mux.runs/impl_1'
+HD_PWD='C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/-5MuxOfMux/3m16x4Mux/m16x4Mux.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .write_bitstream.begin.rst
+/bin/touch .init_design.begin.rst
 EAStep vivado -log m16x4Mux.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source m16x4Mux.tcl -notrace
 
 

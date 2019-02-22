@@ -5,15 +5,46 @@ Vivado turns all circuits into the primitives of a CLB Slice: LUTs, muxes, carry
 
 #### Port Diagram
 
+
+
 #### Verilog Code
+
+![Lab5P1Code](Lab5P1Code.PNG)
 
 #### RTL Schematic Screen shot
 
+![Lab5P1RTL](Lab5P1RTL.PNG)
+
 #### Synthesis Schematic Screen shot
+
+![Lab5P1Synth](Lab5P1Synth.PNG)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![Lab5P1Interest](Lab5P1Interest.PNG)
+
 #### Testing
+
+
+
+| select | b    | a    | g    | h    | f    |
+| ------ | ---- | ---- | ---- | ---- | ---- |
+| 0      | 0    | 0    | 0    | 0    | 0    |
+| 0      | 0    | 1    | 0    | 0    | 0    |
+| 0      | 1    | 0    | 1    | 1    | 1    |
+| 0      | 1    | 1    | 1    | 1    | 1    |
+| 1      | 0    | 0    | 0    | 0    | 0    |
+| 1      | 0    | 1    | 1    | 1    | 1    |
+| 1      | 1    | 0    | 0    | 0    | 0    |
+| 1      | 1    | 1    | 1    | 1    | 1    |
+
+
+
+
+
+
+
+
 
 #### Prompts
 
@@ -39,15 +70,96 @@ This mux is implemented both with gates, tristate and RTL.
 
 #### Port Diagram
 
-#### Verilog Code ![1549536796950](1549536796950.png)
+
+
+#### Verilog Code
+
+####  ![1549536796950](1549536796950.png)
+
+
 
 #### RTL Schematic Screen shot
 
+![Lab5P2RTL](Lab5P2RTL.PNG)
+
 #### Synthesis Schematic Screen shot
+
+![Lab5P2Synth](Lab5P2Synth-1550519819325.PNG)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![Lab5P2Interest](Lab5P2Interest.PNG)
+
 #### Testing
+
+| select1 | select0 | b3   | b2   | b1   | b0   | segOut1 | segOut2 |
+| ------- | ------- | ---- | ---- | ---- | ---- | ------- | ------- |
+| 0       | 0       | 0    | 0    | 0    | 0    | 0       | 0       |
+| 0       | 0       | 0    | 0    | 0    | 1    | 1       | 1       |
+| 0       | 0       | 0    | 0    | 1    | 0    | 0       | 0       |
+| 0       | 0       | 0    | 0    | 1    | 1    | 1       | 1       |
+| 0       | 0       | 0    | 1    | 0    | 0    | 0       | 0       |
+| 0       | 0       | 0    | 1    | 0    | 1    | 1       | 1       |
+| 0       | 0       | 0    | 1    | 1    | 0    | 0       | 0       |
+| 0       | 0       | 0    | 1    | 1    | 1    | 1       | 1       |
+| 0       | 0       | 1    | 0    | 0    | 0    | 0       | 0       |
+| 0       | 0       | 1    | 0    | 0    | 1    | 1       | 1       |
+| 0       | 0       | 1    | 0    | 1    | 0    | 0       | 0       |
+| 0       | 0       | 1    | 0    | 1    | 1    | 1       | 1       |
+| 0       | 0       | 1    | 1    | 0    | 0    | 0       | 0       |
+| 0       | 0       | 1    | 1    | 0    | 1    | 1       | 1       |
+| 0       | 0       | 1    | 1    | 1    | 0    | 0       | 0       |
+| 0       | 0       | 1    | 1    | 1    | 1    | 1       | 1       |
+| 0       | 1       | 0    | 0    | 0    | 0    | 0       | 0       |
+| 0       | 1       | 0    | 0    | 0    | 1    | 0       | 0       |
+| 0       | 1       | 0    | 0    | 1    | 0    | 1       | 1       |
+| 0       | 1       | 0    | 0    | 1    | 1    | 1       | 1       |
+| 0       | 1       | 0    | 1    | 0    | 0    | 0       | 0       |
+| 0       | 1       | 0    | 1    | 0    | 1    | 0       | 0       |
+| 0       | 1       | 0    | 1    | 1    | 0    | 1       | 1       |
+| 0       | 1       | 0    | 1    | 1    | 1    | 1       | 1       |
+| 0       | 1       | 1    | 0    | 0    | 0    | 0       | 0       |
+| 0       | 1       | 1    | 0    | 0    | 1    | 0       | 0       |
+| 0       | 1       | 1    | 0    | 1    | 0    | 1       | 1       |
+| 0       | 1       | 1    | 0    | 1    | 1    | 1       | 1       |
+| 0       | 1       | 1    | 1    | 0    | 0    | 0       | 0       |
+| 0       | 1       | 1    | 1    | 0    | 1    | 0       | 0       |
+| 0       | 1       | 1    | 1    | 1    | 0    | 1       | 1       |
+| 0       | 1       | 1    | 1    | 1    | 1    | 1       | 1       |
+| 1       | 0       | 0    | 0    | 0    | 0    | 0       | 0       |
+| 1       | 0       | 0    | 0    | 0    | 1    | 0       | 0       |
+| 1       | 0       | 0    | 0    | 1    | 0    | 0       | 0       |
+| 1       | 0       | 0    | 0    | 1    | 1    | 0       | 0       |
+| 1       | 0       | 0    | 1    | 0    | 0    | 1       | 1       |
+| 1       | 0       | 0    | 1    | 0    | 1    | 1       | 1       |
+| 1       | 0       | 0    | 1    | 1    | 0    | 1       | 1       |
+| 1       | 0       | 0    | 1    | 1    | 1    | 1       | 1       |
+| 1       | 0       | 1    | 0    | 0    | 0    | 0       | 0       |
+| 1       | 0       | 1    | 0    | 0    | 1    | 0       | 0       |
+| 1       | 0       | 1    | 0    | 1    | 0    | 0       | 0       |
+| 1       | 0       | 1    | 0    | 1    | 1    | 0       | 0       |
+| 1       | 0       | 1    | 1    | 0    | 0    | 1       | 1       |
+| 1       | 0       | 1    | 1    | 0    | 1    | 1       | 1       |
+| 1       | 0       | 1    | 1    | 1    | 0    | 1       | 1       |
+| 1       | 0       | 1    | 1    | 1    | 1    | 1       | 1       |
+| 1       | 1       | 0    | 0    | 0    | 0    | 0       | 0       |
+| 1       | 1       | 0    | 0    | 0    | 1    | 0       | 0       |
+| 1       | 1       | 0    | 0    | 1    | 0    | 0       | 0       |
+| 1       | 1       | 0    | 0    | 1    | 1    | 0       | 0       |
+| 1       | 1       | 0    | 1    | 0    | 0    | 0       | 0       |
+| 1       | 1       | 0    | 1    | 0    | 1    | 0       | 0       |
+| 1       | 1       | 0    | 1    | 1    | 0    | 0       | 0       |
+| 1       | 1       | 0    | 1    | 1    | 1    | 0       | 0       |
+| 1       | 1       | 1    | 0    | 0    | 0    | 1       | 1       |
+| 1       | 1       | 1    | 0    | 0    | 1    | 1       | 1       |
+| 1       | 1       | 1    | 0    | 1    | 0    | 1       | 1       |
+| 1       | 1       | 1    | 0    | 1    | 1    | 1       | 1       |
+| 1       | 1       | 1    | 1    | 0    | 0    | 1       | 1       |
+| 1       | 1       | 1    | 1    | 0    | 1    | 1       | 1       |
+| 1       | 1       | 1    | 1    | 1    | 0    | 1       | 1       |
+| 1       | 1       | 1    | 1    | 1    | 1    | 1       | 1       |
+
+
 
 #### Prompts
 
@@ -59,15 +171,27 @@ This mux is implemented both with gates, tristate and RTL.
 
 #### Port Diagram
 
+
+
 #### Verilog Code
+
+![Lab5P3Code](Lab5P3Code.PNG)
 
 #### RTL Schematic Screen shot
 
+
+
 #### Synthesis Schematic Screen shot
+
+
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+
+
 #### Testing
+
+
 
 #### Prompts
 

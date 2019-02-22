@@ -60,16 +60,99 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
+
+start_step init_design
+set ACTIVE_STEP init_design
+set rc [catch {
+  create_msg_db init_design.pb
+  create_project -in_memory -part xc7a100tcsg324-1
+  set_property design_mode GateLvl [current_fileset]
+  set_param project.singleFileAddWarning.threshold 0
+  set_property webtalk.parent_dir {C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/-5MuxOfMux/2m4x2Mux/m4x2Mux.cache/wt} [current_project]
+  set_property parent.project_path {C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/-5MuxOfMux/2m4x2Mux/m4x2Mux.xpr} [current_project]
+  set_property ip_output_repo {{C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/-5MuxOfMux/2m4x2Mux/m4x2Mux.cache/ip}} [current_project]
+  set_property ip_cache_permissions {read write} [current_project]
+  add_files -quiet {{C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/-5MuxOfMux/2m4x2Mux/m4x2Mux.runs/synth_1/m4x2Mux.dcp}}
+  read_xdc {{C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/-5MuxOfMux/2m4x2Mux/m4x2Mux.srcs/constrs_1/imports/m4x2Mux/Nexys4DDR_Master.xdc}}
+  link_design -top m4x2Mux -part xc7a100tcsg324-1
+  close_msg_db -file init_design.pb
+} RESULT]
+if {$rc} {
+  step_failed init_design
+  return -code error $RESULT
+} else {
+  end_step init_design
+  unset ACTIVE_STEP 
+}
+
+start_step opt_design
+set ACTIVE_STEP opt_design
+set rc [catch {
+  create_msg_db opt_design.pb
+  opt_design 
+  write_checkpoint -force m4x2Mux_opt.dcp
+  create_report "impl_1_opt_report_drc_0" "report_drc -file m4x2Mux_drc_opted.rpt -pb m4x2Mux_drc_opted.pb -rpx m4x2Mux_drc_opted.rpx"
+  close_msg_db -file opt_design.pb
+} RESULT]
+if {$rc} {
+  step_failed opt_design
+  return -code error $RESULT
+} else {
+  end_step opt_design
+  unset ACTIVE_STEP 
+}
+
+start_step place_design
+set ACTIVE_STEP place_design
+set rc [catch {
+  create_msg_db place_design.pb
+  if { [llength [get_debug_cores -quiet] ] > 0 }  { 
+    implement_debug_core 
+  } 
+  place_design 
+  write_checkpoint -force m4x2Mux_placed.dcp
+  create_report "impl_1_place_report_io_0" "report_io -file m4x2Mux_io_placed.rpt"
+  create_report "impl_1_place_report_utilization_0" "report_utilization -file m4x2Mux_utilization_placed.rpt -pb m4x2Mux_utilization_placed.pb"
+  create_report "impl_1_place_report_control_sets_0" "report_control_sets -verbose -file m4x2Mux_control_sets_placed.rpt"
+  close_msg_db -file place_design.pb
+} RESULT]
+if {$rc} {
+  step_failed place_design
+  return -code error $RESULT
+} else {
+  end_step place_design
+  unset ACTIVE_STEP 
+}
+
+start_step route_design
+set ACTIVE_STEP route_design
+set rc [catch {
+  create_msg_db route_design.pb
+  route_design 
+  write_checkpoint -force m4x2Mux_routed.dcp
+  create_report "impl_1_route_report_drc_0" "report_drc -file m4x2Mux_drc_routed.rpt -pb m4x2Mux_drc_routed.pb -rpx m4x2Mux_drc_routed.rpx"
+  create_report "impl_1_route_report_methodology_0" "report_methodology -file m4x2Mux_methodology_drc_routed.rpt -pb m4x2Mux_methodology_drc_routed.pb -rpx m4x2Mux_methodology_drc_routed.rpx"
+  create_report "impl_1_route_report_power_0" "report_power -file m4x2Mux_power_routed.rpt -pb m4x2Mux_power_summary_routed.pb -rpx m4x2Mux_power_routed.rpx"
+  create_report "impl_1_route_report_route_status_0" "report_route_status -file m4x2Mux_route_status.rpt -pb m4x2Mux_route_status.pb"
+  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -file m4x2Mux_timing_summary_routed.rpt -pb m4x2Mux_timing_summary_routed.pb -rpx m4x2Mux_timing_summary_routed.rpx -warn_on_violation "
+  create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file m4x2Mux_incremental_reuse_routed.rpt"
+  create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file m4x2Mux_clock_utilization_routed.rpt"
+  create_report "impl_1_route_report_bus_skew_0" "report_bus_skew -warn_on_violation -file m4x2Mux_bus_skew_routed.rpt -pb m4x2Mux_bus_skew_routed.pb -rpx m4x2Mux_bus_skew_routed.rpx"
+  close_msg_db -file route_design.pb
+} RESULT]
+if {$rc} {
+  write_checkpoint -force m4x2Mux_routed_error.dcp
+  step_failed route_design
+  return -code error $RESULT
+} else {
+  end_step route_design
+  unset ACTIVE_STEP 
+}
 
 start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_param synth.incrementalSynthesisCache {C:/Users/Scott Foerster/Documents/GitHub/ENES246/-5MuxOfMux/m4x2Mux/.Xil/Vivado-12476-LabSet332/incrSyn}
-  open_checkpoint m4x2Mux_routed.dcp
-  set_property webtalk.parent_dir {C:/Users/Scott Foerster/Documents/GitHub/ENES246/-5MuxOfMux/m4x2Mux/m4x2Mux.cache/wt} [current_project]
   catch { write_mem_info -force m4x2Mux.mmi }
   write_bitstream -force m4x2Mux.bit 
   catch {write_debug_probes -quiet -force m4x2Mux}
