@@ -179,15 +179,15 @@ This mux is implemented both with gates, tristate and RTL.
 
 #### RTL Schematic Screen shot
 
-
+![Lab5P3RTL](Lab5P3RTL.PNG)
 
 #### Synthesis Schematic Screen shot
 
-
+![Lab5P3Synth](Lab5P3Synth.PNG)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
-
+![Lab5P3Interest](Lab5P3Interest.PNG)
 
 #### Testing
 
@@ -225,15 +225,27 @@ This mux is implemented both with gates, tristate and RTL.
 
 #### Port Diagram
 
+
+
 #### Verilog Code
+
+![Lab5P4](Lab5P4.PNG)
 
 #### RTL Schematic Screen shot
 
+![Lab5P4RTL](Lab5P4RTL.PNG)
+
 #### Synthesis Schematic Screen shot
+
+![Lab5P4Synth](Lab5P4Synth.PNG)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![Lab5P4Interest](Lab5P4Interest.PNG)
+
 #### Testing
+
+
 
 #### Prompts
 
@@ -275,17 +287,29 @@ One goal might be to use the primitives within the FPGA CLB. Chapter 3 of the Vi
 
 #### Port Diagram
 
+
+
 #### Verilog Code
+
+![Lab5P5Code](Lab5P5Code.PNG)
 
 #### RTL Schematic Screen shot
 
+![Lab5P5RTL](Lab5P5RTL.PNG)
+
 #### Synthesis Schematic Screen shot
 
+![Lab5P5Synth](Lab5P5Synth.PNG)
+
 #### Implementation Device screen shot zoomed in on something interesting
+
+![Lab5Part5Interest](Lab5Part5Interest.PNG)
 
 #### Testing
 
 Look at the truth table in the Verilog code and be able to describe the switches needed to access a row in it and predict the output. 
+
+
 
 #### Prompts
 

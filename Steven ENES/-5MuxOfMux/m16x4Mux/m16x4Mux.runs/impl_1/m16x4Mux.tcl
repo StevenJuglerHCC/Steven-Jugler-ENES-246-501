@@ -68,7 +68,7 @@ set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
   open_checkpoint m16x4Mux_routed.dcp
-  set_property webtalk.parent_dir C:/Users/FoersterGame/Documents/GitHub/ENES246/-5MuxOfMux/m16x4Mux/m16x4Mux.cache/wt [current_project]
+  set_property webtalk.parent_dir {C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/-5MuxOfMux/m16x4Mux/m16x4Mux.cache/wt} [current_project]
   catch { write_mem_info -force m16x4Mux.mmi }
   write_bitstream -force m16x4Mux.bit 
   catch {write_debug_probes -quiet -force m16x4Mux}
