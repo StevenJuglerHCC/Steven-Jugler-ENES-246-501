@@ -114,8 +114,15 @@
       <Filter Type="Constrs"/>
       <File Path="$PSRCDIR/constrs_1/imports/m16x4Mux/Nexys4DDR_Master.xdc">
         <FileInfo>
+          <Attr Name="UserDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../Nexys4DDR_Master.xdc"/>
           <Attr Name="ImportTime" Val="1538585720"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../-6TestingTruthTables/1decoder/Nexys4DDR_Master.xdc">
+        <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>

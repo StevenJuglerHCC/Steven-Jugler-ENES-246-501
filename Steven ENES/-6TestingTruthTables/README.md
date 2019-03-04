@@ -16,19 +16,39 @@ To implement this we need to first build a decoder circuit.
 
 #### Port Diagram
 
+
+
 #### Verilog Code
+
+![Lab6P1Code](Lab6P1Code.PNG)
 
 #### RTL Schematic Screen shot
 
+![Lab6P1RTL](Lab6P1RTL.PNG)
+
 #### Synthesis Schematic Screen shot
+
+![Lab6P1Synth](Lab6P1Synth.PNG)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![Lab6P1Interest](Lab6P1Interest.PNG)
+
 #### Testing
+
+It is functionally identical to lab 5 m16x4, except it is much more intuitive as to what each switch's value is and how to make the light move in the correct order.
+
+follows binary input.
+
+
 
 #### Prompts
 
 *How many of the outputs of the Decoder are positive at any given instant in time?*
+
+***only one.*** 
+
+
 
 *When the Decoder changes it's output, what happens among these choices:*
 
@@ -45,25 +65,45 @@ To implement this we need to first build a decoder circuit.
 
 #### Port Diagram
 
+
+
 #### Verilog Code
+
+![Lab6P2Code](Lab6P2Code.PNG)
 
 #### RTL Schematic Screen shot
 
 ![1549467326960](1549467326960.png)
 
+
+
 #### Synthesis Schematic Screen shot
+
+
+
+![Lab6P2Synth](Lab6P2Synth.PNG)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![Lab6P2Interest](Lab6P2Interest.PNG)
+
 #### Testing
+
+No matter the switch combo, the LED will always stay on. I assume that it does this since the code would always make it off, but it could also be an optimization thing messing with it.
 
 #### Prompts
 
 *Does this circuit work, or is the testing trivial?*
 
+**It does not work, the LED stays on no matter what.**
+
 *At what stage in the workflow does the vivado decide this circuit is a mistake, it is trivial and doesn't implement it?*
 
+**RTL Analysis. This is where it optimizes the code.**
+
 *Do you think it is [possible to turn off some aspect of Vivado](https://forums.xilinx.com/t5/Implementation/How-to-disable-optimization-in-vivado/td-p/770861) that would enable testing of this circuit?*
+
+**no, Vivado is quite keen on their optimization tech, and as such it is impossible to remove said feature.**
 
 *What is the easiest, obvious starting point to explore options in Vivado to turn off anything that it does?*
 
@@ -79,7 +119,11 @@ Maybe the reason that Vivado optimized the decoder and multiplexer out of the ci
 
 #### Port Diagram
 
+
+
 #### Verilog Code
+
+![Lab6P3Code](Lab6P3Code.PNG)
 
 #### RTL Schematic Screen shot
 
@@ -87,35 +131,65 @@ Maybe the reason that Vivado optimized the decoder and multiplexer out of the ci
 
 #### Synthesis Schematic Screen shot
 
+![Lab6P2Synth](Lab6P2Synth-1551129285625.PNG)
+
 #### Implementation Device screen shot zoomed in on something interesting
 
+![Lab6P3Interest](Lab6P3Interest.PNG)
+
 #### Testing
+
+
 
 #### Prompts
 
 *Did this circuit fix the problems of the previous circuit?*
 
+**Yes, since it is attached to two separate outputs instead of one single one.** 
+
 *Did this circuit test the decoder?*
+
+**yes, it ran through the sequence successfully.** 
 
 *Did this circuit test the mux?*
 
-## 4Lut
+**not really, since it was always on.** 
+
+## 4Lut - forget it/ same as in Lab 5.
 
 Vivado calls optimization "inferred" as in vivado infers your intent and then rebuilds the circuit you were thinking about with primitives, starting with LUTs. This project explores a LUT6 primitive. 
 
 #### Port Diagram
 
+
+
 #### Verilog Code
+
+![Lab6P4Code](Lab6P4Code.PNG)
 
 #### RTL Schematic Screen shot
 
+![Lab6P4RTL](Lab6P4RTL.PNG)
+
 #### Synthesis Schematic Screen shot
+
+![Lab6P4Synth](Lab6P4Synth.PNG)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![Lab6P4Interest](Lab6P4Interest.PNG)
+
 #### Testing
 
+![Lab6P4Testing](Lab6P4Testing.PNG)
+
+It would appear that the select lines prevent data flow when the corresponding switch is flipped. select 0 with SW[0] , select 1 with SW [1]
+
 #### Prompts
+
+
+
+
 
 # Ethics of Testing
 
