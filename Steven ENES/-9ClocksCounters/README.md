@@ -159,13 +159,33 @@ More generally this is called priority logic.  It was the subject of a talk at t
 
 #### Verilog Code
 
+![Lab9P3Code](Lab9P3Code.PNG)
+
 #### RTL Schematic Screen shot
+
+![Lab9P3RTL](Lab9P3RTL.PNG)
 
 #### Synthesis Schematic Screen shot
 
+![Lab9P3Synth](Lab9P3Synth.PNG)
+
 #### Implementation Device screen shot zoomed in on something interesting
 
+![Lab9P3Interest](Lab9P3Interest.PNG)
+
 #### Testing
+
+inputs: sw[7 : 0]
+
+outputs:  three sets of three LEDs  - 
+
+​			abc1 - LEDs [3:1]
+
+​			abc2 - LEDs [9:7]
+
+​			abc3 - LEDs [15:13]
+
+
 
 #### Prompts
 
@@ -187,11 +207,19 @@ Just do a screen shot of the top level module.
 
 #### Verilog Code
 
+![Lab9P4Code](Lab9P4Code.PNG)
+
 #### RTL Schematic Screen shot
+
+![Lab9P4RTL](Lab9P4RTL.PNG)
 
 #### Synthesis Schematic Screen shot
 
+![Lab9P4Synth](Lab9P4Synth.PNG)
+
 #### Implementation Device screen shot zoomed in on something interesting
+
+![Lab9P4Interest](Lab9P4Interest.PNG)
 
 #### Testing
 
