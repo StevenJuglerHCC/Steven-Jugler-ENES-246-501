@@ -25,22 +25,38 @@ What is interesting is one of the LUTs has three inputs. Looking at the inputs, 
 
 #### Test/Demo
 
+the outputs will generally be opposites, until it gets to both on. in which case the circuit falls apart. 
+
 #### Prompts
 
 *What gate(s) does the LUT2 truth table (look at the equation) represent?* 
 
+- And gate
+
 *What gate(s) does the LUT3 truth table (look at the equation) represent?* A complicated mess. 
+
+- not gate
 
 *What feature or pattern in the LUT3 truth table prevents an oscillation, prevents the output feeding back to the input, changing the output again, changing the input again?* *Cut and paste the truth table here.  And then discuss.* 
 
-*Click Run Simulation. What are the options?  Type them or insert a screen shot.* 
+
+
+Click Run Simulation. What are the options?  Type them or insert a screen shot.* 
+
+
 
 *Click on the top option, Behavioral Simulation. What new command appears in the top, horizontal ribbon bar?* Run
+
+
 
 *Does "Open Synthesized Design" cause a new option on the top level ribbon?* No.
 *Does "Open Implemented Design" cause a new option on the top level ribbon?* No.
 
+
+
 *What changes on the second to the top ribbon?* 
+
+
 
 before
 
@@ -133,6 +149,8 @@ In the above exercise you should have become confused. Remember the rule: only o
 
 Remembering is associated with the loops above. *Can the loop be really big and involve lots of chips?*
 
+sure
+
 
 
 ## 3_ EveryOther Clocked
@@ -141,15 +159,29 @@ This circuit is a traditional clocked, two state network. It is to be used to co
 
 #### Port Diagram
 
+
+
 #### Verilog Code
+
+![Lab10P3RTL](Lab10P3RTL.PNG)
 
 #### RTL Schematic Screen shot
 
+![Lab10P3Code](Lab10P3Code-1552335796743.PNG)
+
 #### Synthesis Schematic Screen shot
+
+![Lab10P3Synth](Lab10P3Synth.PNG)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![Lab10P3Interest](Lab10P3Interest.PNG)
+
 #### Testing
+
+It only has the one switch. every time it is switched up and down, the led moves to the next position.  it seems to be unstable.
+
+
 
 +++++++++
 
@@ -157,7 +189,13 @@ This circuit is a traditional clocked, two state network. It is to be used to co
 
 *How many switch up and down movements are necessary to go through all four state combinations?*
 
+four, although it seems to be skipping a step or two.
+
+
+
 *We have been taught that all nets have to have a driver. What drives the combinatory loop?*
+
+the changing x input.
 
 
 
@@ -169,11 +207,19 @@ This circuit is from the [University of WaterLoo in Canada](http://pami.uwaterlo
 
 #### Verilog Code
 
+![Lab10P4Code](Lab10P4Code.PNG)
+
 #### RTL Schematic Screen shot
+
+![Lab10P4RTL](Lab10P4RTL.PNG)
 
 #### Synthesis Schematic Screen shot
 
+![Lab10P4Synth](Lab10P4Synth.PNG)
+
 #### Implementation Device screen shot zoomed in on something interesting
+
+![Lab10P4Interest](Lab10P4Interest.PNG)
 
 #### Testing
 
@@ -182,6 +228,10 @@ ___
 #### Prompts
 
 *How many switch up and down movements are necessary to go through all four state combinations?*
+
+I don't know, it seems a little random. potential metastability problem. 
+
+
 
 ## 5_Combinatory Loops
 
