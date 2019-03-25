@@ -14,7 +14,7 @@ module updown_ctr_behavior(
     output reg [COUNT_SIZE-1:0] count
     );
 
-   wire clk_5MHz;
+   wire CLK_5MHz;
    
    clk_5MHz U1
    (

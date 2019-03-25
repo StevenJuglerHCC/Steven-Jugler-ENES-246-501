@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/FoersterGame/Documents/GitHub/ENES246/10Latches/5_ComboLock/ComboLockASN.srcs/constrs_1/imports/4_ComboLockASN/Nexys4DDR_Master.xdc rfile:../../../ComboLockASN.srcs/constrs_1/imports/4_ComboLockASN/Nexys4DDR_Master.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:{C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/10Latches/7_ComboLock_Verilog/ASN/ComboLockASN.srcs/constrs_1/imports/4_ComboLockASN/Nexys4DDR_Master.xdc} rfile:../../../ComboLockASN.srcs/constrs_1/imports/4_ComboLockASN/Nexys4DDR_Master.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:16 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN J15   IOSTANDARD LVCMOS33 } [get_ports { y1 }]; #IO_L24N_T3_RS0_15 Sch=sw[0]
 set_property src_info {type:XDC file:1 line:17 export:INPUT save:INPUT read:READ} [current_design]

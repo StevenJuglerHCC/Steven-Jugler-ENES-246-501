@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/FoersterGame/Documents/GitHub/ENES246/10Latches/5_ComboLock/ComboCheck.runs/synth_1'
+HD_PWD='C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/10Latches/7_ComboLock_Verilog/check/ComboCheck.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -253,6 +253,14 @@ Asynchronous circuits as you have seen above in the SR latch cause problems for 
 
 This circuit is difficult to test. Follow the instructions above and show your instructor it working. Learn how to set the combination, then remember it, enter it and watch the door/safe unlock. 
 
+
+
+
+
+
+
+
+
 ___
 
 #### Prompts
@@ -333,17 +341,77 @@ This project contains an attempt at building the combination lock using three mo
 
 #### Verilog Code
 
+1. ComboCheck:
 
+![Lab10P7ComboCheckRTL](Lab10P7ComboCheckRTL.PNG)
+
+2. ASN:
+
+   ![Lab10P7ASNCode](Lab10P7ASNCode.PNG)
+
+3. ComboLockTop:
+
+   ![Lab10P7ComboLockTopCode](Lab10P7ComboLockTopCode.PNG)
 
 #### RTL Schematic Screen shot
 
+1. ComboCheck:
+
+![Lab10P7ComboCheckcode](Lab10P7ComboCheckcode.PNG)
+
+2. ASN:
+
+   ![Lab10P7ASNRTL](Lab10P7ASNRTL.PNG)
+
+3. ComboLockTop:
+
+   ![Lab10P7ComboLockTopRTL](Lab10P7ComboLockTopRTL.PNG)
+
 #### Synthesis Schematic Screen shot
 
-#### Implementation Device screen shot zoomed in on something interesting
+1. ComboCheck:
+
+![Lab10P7ComboCheckSynth](Lab10P7ComboCheckSynth.PNG)
+
+2. ASN:
+
+   ![Lab10P7ASNSynth](Lab10P7ASNSynth.PNG)
+
+3. ComboLockTop:
+
+   ![Lab10P7ComboLockTopSynth](Lab10P7ComboLockTopSynth-1553108785552.PNG)
+
+#### Implemetation Device screen shot zoomed in on something interesting
+
+1. ComboCheck:
+
+![Lab10P7ComboCheckInterest](Lab10P7ComboCheckInterest.PNG)
+
+2. ASN:
+
+   ![Lab10P7ASNInterest](Lab10P7ASNInterest.PNG)
+
+3. ComboLockTop:
+
+   ![Lab10P7ComboLockTopInterest](Lab10P7ComboLockTopInterest.PNG)
 
 #### Testing
 
 The only way to test this is to look at the logisim screen and then the board. 
+
+1. ComboCheck:
+
+
+
+2. ASN:
+
+   
+
+3. ComboLockTop:
+
+   
+
+
 
 ------
 

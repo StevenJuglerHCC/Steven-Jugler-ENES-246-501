@@ -60,24 +60,20 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7a100tcsg324-1
-  set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/FoersterGame/Documents/GitHub/ENES246/10Latches/3_CombinatoryLoops/4wideMux.cache/wt [current_project]
-  set_property parent.project_path C:/Users/FoersterGame/Documents/GitHub/ENES246/10Latches/3_CombinatoryLoops/4wideMux.xpr [current_project]
-  set_property ip_output_repo C:/Users/FoersterGame/Documents/GitHub/ENES246/10Latches/3_CombinatoryLoops/4wideMux.cache/ip [current_project]
+  set_property webtalk.parent_dir {C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/10Latches/6_WobblyRingDelays/WobblyRing.cache/wt} [current_project]
+  set_property parent.project_path {C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/10Latches/6_WobblyRingDelays/WobblyRing.xpr} [current_project]
+  set_property ip_output_repo {{C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/10Latches/6_WobblyRingDelays/WobblyRing.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/FoersterGame/Documents/GitHub/ENES246/10Latches/3_CombinatoryLoops/4wideMux.runs/synth_1/wobblyRing.dcp
-  read_xdc C:/Users/FoersterGame/Documents/GitHub/ENES246/10Latches/3_CombinatoryLoops/4wideMux.srcs/constrs_1/imports/4_ComboLockASN/Nexys4DDR_Master.xdc
+  add_files -quiet {{C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/10Latches/6_WobblyRingDelays/WobblyRing.runs/synth_1/wobblyRing.dcp}}
+  read_xdc {{C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/10Latches/6_WobblyRingDelays/WobblyRing.srcs/constrs_1/imports/4_ComboLockASN/Nexys4DDR_Master.xdc}}
   link_design -top wobblyRing -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]

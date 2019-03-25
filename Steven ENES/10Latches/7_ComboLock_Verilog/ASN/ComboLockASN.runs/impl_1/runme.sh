@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/FoersterGame/Documents/GitHub/ENES246/10Latches/5_ComboLock/ComboLockASN.runs/impl_1'
+HD_PWD='C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/10Latches/7_ComboLock_Verilog/ASN/ComboLockASN.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .init_design.begin.rst
+/bin/touch .write_bitstream.begin.rst
 EAStep vivado -log ComboLockASN.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source ComboLockASN.tcl -notrace
 
 

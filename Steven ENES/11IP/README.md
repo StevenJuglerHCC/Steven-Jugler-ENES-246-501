@@ -15,17 +15,39 @@ This is the biggest project we will get to look at in this course. This is the p
 
 *Look in the 1_Nexys4DDRdemo folder.  Within it are two folders: proj and scr. Proj contains familiar contents. But a folder normally there is missing.  Which folder is it?* 
 
+.sim, and .ip_user_files.
+
 *List off the scr folder contents (or a screen shot). We are going to move through them one at a time.* 
 
+constraints, hdl, ip, others.
+
+
+
 *The scr/contraints folder looks like it contains a normal XDC file. Look at it without using vivado. It implies that other things are demoed besides LED's and switches. What are they?* 
+
+the five buttons, all of the 7seg displays, all of the VGA Connectors, 4 of 6 Accelerometers, 2 of 4 temp sensors, all three microphones, the 2 audio amps, and the two usb HIDs.
+
+
 
 *Which features may be used but are not described in detail (they are listed under features used) on this [web page](https://reference.digilentinc.com/learn/programmable-logic/tutorials/nexys-4-ddr-user-demo/start)?* 
 
 *Look in the scr/hdl folder. Vivado was used for this project. Was Verilog? Was SystemVerilog? What was used for this project?*
 
+only the basics, no verilog or systemverilog.
+
+
+
 *Look in the scr/hdl folder. This demo was split into how many modules?*
 
+30 modules.
+
+
+
 *What looks like the name of the top level module?*
+
+Nexys3DdrUserDemo.
+
+
 
 *The models average 400 lines of code 157 lines estimated to be comments. Please go through each of the code blocks and fill in an [unfilled column of this spreadsheet](https://docs.google.com/spreadsheets/d/1YMxmIy6VkRc-pRICy5a5Qc_1I_HvcNle5VwgkN6bdQM/edit#gid=0). Please put your name at the top of the column.* 
 
@@ -207,8 +229,18 @@ Obviously the code will need to be modified. After doing so, you should be able 
 
 *What is the maximum frequency the Xilinx Clock can generate?*
 
+800.000MHz
+
 *What is the minimum frequency the Xilinx Clock can generate?*
+
+10.000MHz
 
 *What are the possible future projects where you will want to use the Xilinx Clock?*
 
+It has a rather broad number of uses, so most future projects could incorporate it in one way or another.
+
 Show your instructor counting up and down when done!
+
+
+
+Forrester has stated that I was taking too long with this and needed to move on .

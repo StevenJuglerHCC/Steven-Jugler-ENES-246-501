@@ -1,11 +1,12 @@
 `timescale 1ns / 1ps
 
-module SquareRoot(
-    input clk, 
+module clk_5MHz(
+    input clk_in1, 
     input [13:0] data_i, //SW[7:0]
     output [7:0] abcdefgdp, //common cathods of 7seg displays
     output [7:0] AN, //which of the 8 7seg displays abcdefgdp is focused upon
-    output [15:0] LED
+    output [15:0] LED,
+    output clk_out1
     );
     wire [15:0] readyData;
     wire ready;
@@ -16,7 +17,7 @@ module SquareRoot(
     assign LED = c_input[31:16];
          
     cordic_0 instan1(
-        .aclk(clk),
+        .aclk(clk_in1),
         .s_axis_cartesian_tvalid(enter),
         .s_axis_cartesian_tdata(data_i),
         .m_axis_dout_tvalid(ready),
@@ -32,7 +33,7 @@ module SquareRoot(
     reg split = 1; //tells 7seg to split up the displays into two numbers, separately converted to BCD, separately leading zero blanked
     
     Eight7SegDisplay instantiation(
-        .clk(clk), //normal 100Mhz clock .. causes anodes to cycle 400 times a second
+        .clk(clk_in1), //normal 100Mhz clock .. causes anodes to cycle 400 times a second
         .display(c_input), //these are the 32 bits to display .. coming from counter in this example
         .reset(reset), //starts anode counter over again .. part of good design .. really doesn't impact the module
         .hexBCD(hexBCD), //switches the display from 32 bits binary to 28 bits BCD

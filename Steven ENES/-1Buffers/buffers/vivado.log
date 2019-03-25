@@ -2,72 +2,25 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Wed Feb  6 15:16:49 2019
-# Process ID: 3404
-# Current directory: C:/Users/SET253-INS1U/Documents/GitHub/ENES246/-1Buffers/buffers
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3396 C:\Users\SET253-INS1U\Documents\GitHub\ENES246\-1Buffers\buffers\buffers.xpr
-# Log file: C:/Users/SET253-INS1U/Documents/GitHub/ENES246/-1Buffers/buffers/vivado.log
-# Journal file: C:/Users/SET253-INS1U/Documents/GitHub/ENES246/-1Buffers/buffers\vivado.jou
+# Start of session at: Fri Mar 15 12:10:04 2019
+# Process ID: 20476
+# Current directory: C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/-1Buffers/buffers
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent428 C:\Users\Firev\OneDrive\Documents\GitHub\Steven-Jugler-ENES-246-501\Steven ENES\-1Buffers\buffers\buffers.xpr
+# Log file: C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/-1Buffers/buffers/vivado.log
+# Journal file: C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/-1Buffers/buffers\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/SET253-INS1U/Documents/GitHub/ENES246/-1Buffers/buffers/buffers.xpr
+open_project {C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/-1Buffers/buffers/buffers.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/-1Buffers/buffers'
 INFO: [Project 1-313] Project file moved from 'C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/buffers' since last save.
 Scanning sources...
 Finished scanning sources
+CRITICAL WARNING: [Board 49-67] The board_part definition was not found for digilentinc.com:nexys4_ddr:part0:1.1. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
-open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 695.191 ; gain = 130.301
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 709.098 ; gain = 108.223
 update_compile_order -fileset sources_1
-synth_design -rtl -name rtl_1
-Command: synth_design -rtl -name rtl_1
-Starting synth_design
-Using part: xc7a100tcsg324-1
-Top: switchLED
----------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 792.602 ; gain = 74.438
----------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'switchLED' [C:/Users/SET253-INS1U/Documents/GitHub/ENES246/-1Buffers/buffers/buffers.srcs/sources_1/imports/RTL/Lab1-1Buffers.v:11]
-INFO: [Synth 8-6155] done synthesizing module 'switchLED' (1#1) [C:/Users/SET253-INS1U/Documents/GitHub/ENES246/-1Buffers/buffers/buffers.srcs/sources_1/imports/RTL/Lab1-1Buffers.v:11]
-WARNING: [Synth 8-3330] design switchLED has an empty top module
----------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 828.641 ; gain = 110.477
----------------------------------------------------------------------------------
-
-Report Check Netlist: 
-+------+------------------+-------+---------+-------+------------------+
-|      |Item              |Errors |Warnings |Status |Description       |
-+------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
-+------+------------------+-------+---------+-------+------------------+
----------------------------------------------------------------------------------
-Start Handling Custom Attributes
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 828.641 ; gain = 110.477
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 828.641 ; gain = 110.477
----------------------------------------------------------------------------------
-INFO: [Device 21-403] Loading part xc7a100tcsg324-1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-140] Inserted 16 IBUFs to IO ports without IO buffers.
-INFO: [Opt 31-141] Inserted 16 OBUFs to IO ports without IO buffers.
-
-Processing XDC Constraints
-Initializing timing engine
-Parsing XDC File [C:/Users/SET253-INS1U/Documents/GitHub/ENES246/-1Buffers/buffers/buffers.srcs/constrs_1/imports/Vivado_RTL/buffers.xdc]
-Finished Parsing XDC File [C:/Users/SET253-INS1U/Documents/GitHub/ENES246/-1Buffers/buffers/buffers.srcs/constrs_1/imports/Vivado_RTL/buffers.xdc]
-Completed Processing XDC Constraints
-
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1130.520 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-RTL Elaboration Complete:  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 1217.176 ; gain = 499.012
-8 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
-synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 1217.176 ; gain = 499.012
 exit
-INFO: [Common 17-206] Exiting Vivado at Wed Feb  6 16:55:38 2019...
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 15 12:14:49 2019...
