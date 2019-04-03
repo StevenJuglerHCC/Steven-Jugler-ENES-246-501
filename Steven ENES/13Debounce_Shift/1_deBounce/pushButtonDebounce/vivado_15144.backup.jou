@@ -1,0 +1,58 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Mar 24 10:22:41 2019
+# Process ID: 15144
+# Current directory: C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/1_deBounce/pushButtonDebounce
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3104 C:\Users\FoersterGame\Documents\GitHub\ENES246\13Debounce_Shift\1_deBounce\pushButtonDebounce\pushButtonDebounce.xpr
+# Log file: C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/1_deBounce/pushButtonDebounce/vivado.log
+# Journal file: C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/1_deBounce/pushButtonDebounce\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/1_deBounce/pushButtonDebounce/pushButtonDebounce.xpr
+update_compile_order -fileset sources_1
+save_project_as deBounce C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/2_reUseableDeBounce -force
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/2_reUseableDeBounce/deBounce.runs/impl_1/debouncer.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/2_reUseableDeBounce/deBounce.runs/impl_1/debouncer.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/2_reUseableDeBounce/deBounce.runs/impl_1/debouncer.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/2_reUseableDeBounce/deBounce.runs/impl_1/debouncer.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+file mkdir C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/2_reUseableDeBounce/deBounce.srcs/sources_1/new
+close [ open C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/2_reUseableDeBounce/deBounce.srcs/sources_1/new/debounceTest.sv w ]
+add_files C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/2_reUseableDeBounce/deBounce.srcs/sources_1/new/debounceTest.sv
+update_compile_order -fileset sources_1
+set_property used_in_simulation false [get_files  C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/2_reUseableDeBounce/deBounce.srcs/sources_1/new/debounceTest.sv]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_project

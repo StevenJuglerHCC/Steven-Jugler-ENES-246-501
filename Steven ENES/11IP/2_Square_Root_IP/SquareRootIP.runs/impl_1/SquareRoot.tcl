@@ -65,18 +65,16 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7a100tcsg324-1
-  set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/FoersterGame/Documents/GitHub/ENES246/11IP/2_Square_Root_IP/SquareRootIP.cache/wt [current_project]
-  set_property parent.project_path C:/Users/FoersterGame/Documents/GitHub/ENES246/11IP/2_Square_Root_IP/SquareRootIP.xpr [current_project]
-  set_property ip_output_repo C:/Users/FoersterGame/Documents/GitHub/ENES246/11IP/2_Square_Root_IP/SquareRootIP.cache/ip [current_project]
+  set_property webtalk.parent_dir {C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/11IP/2_Square_Root_IP/SquareRootIP.cache/wt} [current_project]
+  set_property parent.project_path {C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/11IP/2_Square_Root_IP/SquareRootIP.xpr} [current_project]
+  set_property ip_output_repo {{C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/11IP/2_Square_Root_IP/SquareRootIP.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/FoersterGame/Documents/GitHub/ENES246/11IP/2_Square_Root_IP/SquareRootIP.runs/synth_1/SquareRoot.dcp
-  read_ip -quiet C:/Users/FoersterGame/Documents/GitHub/ENES246/11IP/2_Square_Root_IP/SquareRootIP.srcs/sources_1/ip/cordic_0/cordic_0.xci
-  read_xdc C:/Users/FoersterGame/Documents/GitHub/ENES246/11IP/2_Square_Root_IP/SquareRootIP.srcs/constrs_1/imports/ENES246/Nexys4DDR_Master.xdc
+  add_files -quiet {{C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/11IP/2_Square_Root_IP/SquareRootIP.runs/synth_1/SquareRoot.dcp}}
+  read_ip -quiet {{C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/11IP/2_Square_Root_IP/SquareRootIP.srcs/sources_1/ip/cordic_0/cordic_0.xci}}
+  read_xdc {{C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/11IP/2_Square_Root_IP/SquareRootIP.srcs/constrs_1/imports/ENES246/Nexys4DDR_Master.xdc}}
   link_design -top SquareRoot -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]

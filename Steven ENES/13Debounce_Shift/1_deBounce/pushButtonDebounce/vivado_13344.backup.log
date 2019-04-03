@@ -1,0 +1,114 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Apr  2 06:41:15 2019
+# Process ID: 13344
+# Current directory: C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/1_deBounce/pushButtonDebounce
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18280 C:\Users\FoersterGame\Documents\GitHub\ENES246\13Debounce_Shift\1_deBounce\pushButtonDebounce\pushButtonDebounce.xpr
+# Log file: C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/1_deBounce/pushButtonDebounce/vivado.log
+# Journal file: C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/1_deBounce/pushButtonDebounce\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/1_deBounce/pushButtonDebounce/pushButtonDebounce.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/1_deBounce/pushButtonDebounce'
+INFO: [Project 1-313] Project file moved from 'C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/1_PushButtonDebounce/pushButtonDebounce' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: debouncer
+ERROR: [Synth 8-1031] cs is not declared [C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/1_deBounce/pushButtonDebounce/pushButtonDebounce.srcs/sources_1/imports/1_PushButtonDebounce/debounce.sv:16]
+INFO: [Synth 8-2350] module debouncer ignored due to previous errors [C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/1_deBounce/pushButtonDebounce/pushButtonDebounce.srcs/sources_1/imports/1_PushButtonDebounce/debounce.sv:1]
+Failed to read verilog 'C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/1_deBounce/pushButtonDebounce/pushButtonDebounce.srcs/sources_1/imports/1_PushButtonDebounce/debounce.sv'
+1 Infos, 0 Warnings, 0 Critical Warnings and 2 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: debouncer
+ERROR: [Synth 8-1031] cs is not declared [C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/1_deBounce/pushButtonDebounce/pushButtonDebounce.srcs/sources_1/imports/1_PushButtonDebounce/debounce.sv:16]
+INFO: [Synth 8-2350] module debouncer ignored due to previous errors [C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/1_deBounce/pushButtonDebounce/pushButtonDebounce.srcs/sources_1/imports/1_PushButtonDebounce/debounce.sv:1]
+Failed to read verilog 'C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/1_deBounce/pushButtonDebounce/pushButtonDebounce.srcs/sources_1/imports/1_PushButtonDebounce/debounce.sv'
+1 Infos, 0 Warnings, 0 Critical Warnings and 2 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: debouncer
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 806.668 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/1_deBounce/pushButtonDebounce/pushButtonDebounce.srcs/sources_1/imports/1_PushButtonDebounce/debounce.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (1#1) [C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/1_deBounce/pushButtonDebounce/pushButtonDebounce.srcs/sources_1/imports/1_PushButtonDebounce/debounce.sv:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 840.652 ; gain = 33.984
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 840.652 ; gain = 33.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 840.652 ; gain = 33.984
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/1_deBounce/pushButtonDebounce/pushButtonDebounce.srcs/constrs_1/imports/ENES246/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-507] No nets matched 'clk_IBUF'. [C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/1_deBounce/pushButtonDebounce/pushButtonDebounce.srcs/constrs_1/imports/ENES246/Nexys4DDR_Master.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/1_deBounce/pushButtonDebounce/pushButtonDebounce.srcs/constrs_1/imports/ENES246/Nexys4DDR_Master.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PB_sync_0'. [C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/1_deBounce/pushButtonDebounce/pushButtonDebounce.srcs/constrs_1/imports/ENES246/Nexys4DDR_Master.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/1_deBounce/pushButtonDebounce/pushButtonDebounce.srcs/constrs_1/imports/ENES246/Nexys4DDR_Master.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PB_sync_1'. [C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/1_deBounce/pushButtonDebounce/pushButtonDebounce.srcs/constrs_1/imports/ENES246/Nexys4DDR_Master.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/1_deBounce/pushButtonDebounce/pushButtonDebounce.srcs/constrs_1/imports/ENES246/Nexys4DDR_Master.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/1_deBounce/pushButtonDebounce/pushButtonDebounce.srcs/constrs_1/imports/ENES246/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1126.496 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 1196.129 ; gain = 389.461
+6 Infos, 3 Warnings, 3 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 1196.129 ; gain = 389.461
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Apr  2 06:44:32 2019] Launched synth_1...
+Run output will be captured here: C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/1_deBounce/pushButtonDebounce/pushButtonDebounce.runs/synth_1/runme.log
+[Tue Apr  2 06:44:32 2019] Launched impl_1...
+Run output will be captured here: C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/1_deBounce/pushButtonDebounce/pushButtonDebounce.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Apr  2 06:46:37 2019] Launched synth_1...
+Run output will be captured here: C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/1_deBounce/pushButtonDebounce/pushButtonDebounce.runs/synth_1/runme.log
+[Tue Apr  2 06:46:37 2019] Launched impl_1...
+Run output will be captured here: C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/1_deBounce/pushButtonDebounce/pushButtonDebounce.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  2 06:48:35 2019...
