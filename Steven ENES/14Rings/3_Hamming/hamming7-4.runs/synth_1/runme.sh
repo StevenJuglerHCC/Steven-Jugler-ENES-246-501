@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/FoersterGame/Documents/GitHub/ENES246/14Rings/3_Hamming/hamming7-4.runs/synth_1'
+HD_PWD='C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/14Rings/3_Hamming/hamming7-4.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

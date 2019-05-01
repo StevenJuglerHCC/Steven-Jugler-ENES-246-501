@@ -2,50 +2,47 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sun Apr  7 17:40:26 2019
-# Process ID: 7660
-# Current directory: C:/Users/FoersterGame/Documents/GitHub/ENES246/14Rings/2_Mod
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9444 C:\Users\FoersterGame\Documents\GitHub\ENES246\14Rings\2_Mod\mod2.xpr
-# Log file: C:/Users/FoersterGame/Documents/GitHub/ENES246/14Rings/2_Mod/vivado.log
-# Journal file: C:/Users/FoersterGame/Documents/GitHub/ENES246/14Rings/2_Mod\vivado.jou
+# Start of session at: Mon Apr 22 15:29:31 2019
+# Process ID: 23064
+# Current directory: C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/14Rings/2_Mod
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent740 C:\Users\Firev\OneDrive\Documents\GitHub\Steven-Jugler-ENES-246-501\Steven ENES\14Rings\2_Mod\mod2.xpr
+# Log file: C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/14Rings/2_Mod/vivado.log
+# Journal file: C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/14Rings/2_Mod\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/FoersterGame/Documents/GitHub/ENES246/14Rings/2_Mod/mod2.xpr
-INFO: [Project 1-313] Project file moved from 'C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/2_Mod/mod2' since last save.
-CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/FoersterGame/Documents/GitHub/Nexys4DDR_Master.xdc', nor could it be found using path 'C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/Nexys4DDR_Master.xdc'.
+open_project {C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/14Rings/2_Mod/mod2.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/14Rings/2_Mod'
+INFO: [Project 1-313] Project file moved from 'C:/Users/FoersterGame/Documents/GitHub/ENES246/14Rings/2_Mod' since last save.
 Scanning sources...
 Finished scanning sources
+CRITICAL WARNING: [Board 49-67] The board_part definition was not found for digilentinc.com:nexys4_ddr:part0:1.1. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 713.773 ; gain = 84.211
 update_compile_order -fileset sources_1
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Sun Apr  7 17:53:24 2019] Launched synth_1...
-Run output will be captured here: C:/Users/FoersterGame/Documents/GitHub/ENES246/14Rings/2_Mod/mod2.runs/synth_1/runme.log
-[Sun Apr  7 17:53:24 2019] Launched impl_1...
-Run output will be captured here: C:/Users/FoersterGame/Documents/GitHub/ENES246/14Rings/2_Mod/mod2.runs/impl_1/runme.log
-export_ip_user_files -of_objects  [get_files C:/Users/FoersterGame/Documents/GitHub/Nexys4DDR_Master.xdc] -no_script -reset -force -quiet
-remove_files  -fileset constrs_1 C:/Users/FoersterGame/Documents/GitHub/Nexys4DDR_Master.xdc
-add_files -fileset constrs_1 -norecurse C:/Users/FoersterGame/Documents/GitHub/ENES246/14Rings/2_Mod/Nexys4DDR_Master.xdc
-import_files -fileset constrs_1 C:/Users/FoersterGame/Documents/GitHub/ENES246/14Rings/2_Mod/Nexys4DDR_Master.xdc
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Sun Apr  7 18:11:05 2019] Launched synth_1...
-Run output will be captured here: C:/Users/FoersterGame/Documents/GitHub/ENES246/14Rings/2_Mod/mod2.runs/synth_1/runme.log
-[Sun Apr  7 18:11:05 2019] Launched impl_1...
-Run output will be captured here: C:/Users/FoersterGame/Documents/GitHub/ENES246/14Rings/2_Mod/mod2.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Sun Apr  7 18:12:44 2019] Launched synth_1...
-Run output will be captured here: C:/Users/FoersterGame/Documents/GitHub/ENES246/14Rings/2_Mod/mod2.runs/synth_1/runme.log
-[Sun Apr  7 18:12:44 2019] Launched impl_1...
-Run output will be captured here: C:/Users/FoersterGame/Documents/GitHub/ENES246/14Rings/2_Mod/mod2.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Sun Apr  7 18:14:45 2019] Launched synth_1...
-Run output will be captured here: C:/Users/FoersterGame/Documents/GitHub/ENES246/14Rings/2_Mod/mod2.runs/synth_1/runme.log
-[Sun Apr  7 18:14:45 2019] Launched impl_1...
-Run output will be captured here: C:/Users/FoersterGame/Documents/GitHub/ENES246/14Rings/2_Mod/mod2.runs/impl_1/runme.log
+[Mon Apr 22 15:30:56 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/14Rings/2_Mod/mod2.runs/synth_1/runme.log
+[Mon Apr 22 15:30:56 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/14Rings/2_Mod/mod2.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A4022DA
+set_property PROGRAM.FILE {C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/14Rings/2_Mod/mod2.runs/impl_1/mod2.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Firev/OneDrive/Documents/GitHub/Steven-Jugler-ENES-246-501/Steven ENES/14Rings/2_Mod/mod2.runs/impl_1/mod2.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 exit
-INFO: [Common 17-206] Exiting Vivado at Mon Apr  8 04:20:48 2019...
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 22 15:40:17 2019...

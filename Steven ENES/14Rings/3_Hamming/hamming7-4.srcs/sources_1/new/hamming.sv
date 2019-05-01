@@ -27,7 +27,7 @@ module hamming(
     wire [6:0] bitsCorrupted;
     assign bitsCorrupted = sent ^ corrupt;
     assign LED[14:11] = sent;
-    always @* (scr,corrupt,set) begin
+    always @ (scr,corrupt,sent) begin
         if (scr[0]) LED[10:4] = bitsCorrupted;
         if (scr[1]) LED[10:4] = sent;
         if (scr[2]) LED[10:4] = corrupt;
@@ -45,9 +45,12 @@ module hamming(
     assign error = receivedParity[2] != bitsCorrupted[6];
         
     //correcting errors
-    assign corrected[3] =  {^{&{^{receivedParity[2],bitsCorrupted[6]},^{receivedParity[1],bitsCorrupted[5]}},bitsCorrupted[3]}};
-    assign corrected[2] =  {^{&{^{receivedParity[2],bitsCorrupted[6]},^{receivedParity[0],bitsCorrupted[3]}},bitsCorrupted[2]}};
-    assign corrected[1] =  {^{&{^{receivedParity[1],bitsCorrupted[5]},^{receivedParity[0],bitsCorrupted[3]}},bitsCorrupted[1]}};    
-    assign corrected[0] =  {^{&{^{receivedParity[2],bitsCorrupted[6]},^{receivedParity[1],bitsCorrupted[5]},^{receivedParity[0],bitsCorrupted[3]}},bitsCorrupted[1]}};  
+    assign LED[3] =  {^{&{^{receivedParity[2],bitsCorrupted[6]},^{receivedParity[1],bitsCorrupted[5]}},bitsCorrupted[3]}};
+    assign LED[2] =  {^{&{^{receivedParity[2],bitsCorrupted[6]},^{receivedParity[0],bitsCorrupted[3]}},bitsCorrupted[2]}};
+    assign LED[1] =  {^{&{^{receivedParity[1],bitsCorrupted[5]},^{receivedParity[0],bitsCorrupted[3]}},bitsCorrupted[1]}};    
+    assign LED[0] =  {^{&{^{receivedParity[2],bitsCorrupted[6]},^{receivedParity[1],bitsCorrupted[5]},^{receivedParity[0],bitsCorrupted[3]}},bitsCorrupted[1]}};  
+    
+    
+    
     
 endmodule

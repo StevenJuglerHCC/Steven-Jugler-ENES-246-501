@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Mon Apr  8 09:10:04 2019
-| Host         : DESKTOP-KB2R4MG running 64-bit major release  (build 9200)
+| Date         : Mon Apr 29 15:44:05 2019
+| Host         : DESKTOP-IPK4CS4 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file hamming_control_sets_placed.rpt
 | Design       : hamming
 | Device       : xc7a100t
@@ -44,7 +44,7 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               7 |            6 |
+| No           | No                    | No                     |               7 |            2 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |               0 |            0 |
@@ -59,7 +59,7 @@ Table of Contents
 +--------------+---------------+------------------+------------------+----------------+
 | Clock Signal | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
 +--------------+---------------+------------------+------------------+----------------+
-|  p_3_out[10] |               |                  |                6 |              7 |
+|  p_3_out[10] |               |                  |                2 |              7 |
 +--------------+---------------+------------------+------------------+----------------+
 
 
